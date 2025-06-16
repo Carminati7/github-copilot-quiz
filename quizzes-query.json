@@ -7,7 +7,8 @@
       "c": "To ensure AI systems are safe, trustworthy, and ethical.",
       "d": "To replace human decision-making with AI."
     },
-    "rispostaCorretta": "c"
+    "rispostaCorretta": "c",
+    "origin": "https://learn.microsoft.com/en-us/training/paths/copilot/"
   },
   {
     "domanda": "Which principle is NOT one of the six identified by Microsoft for Responsible AI?",
@@ -17,7 +18,8 @@
       "c": "Inclusiveness.",
       "d": "Accountability."
     },
-    "rispostaCorretta": "b"
+    "rispostaCorretta": "b",
+    "origin": "https://learn.microsoft.com/en-us/training/paths/copilot/"
   },
   {
     "domanda": "What does the principle of Fairness in Responsible AI emphasize?",
@@ -27,7 +29,8 @@
       "c": "Prioritizing profitability over ethical concerns.",
       "d": "Creating AI systems that are easy to understand."
     },
-    "rispostaCorretta": "b"
+    "rispostaCorretta": "b",
+    "origin": "https://learn.microsoft.com/en-us/training/paths/copilot/"
   },
   {
     "domanda": "How does Microsoft address potential biases in AI systems?",
@@ -37,7 +40,8 @@
       "c": "By reviewing training data, testing with balanced samples, and using adversarial debiasing.",
       "d": "By allowing users to modify AI system outputs directly."
     },
-    "rispostaCorretta": "c"
+    "rispostaCorretta": "c",
+    "origin": "https://learn.microsoft.com/en-us/training/paths/copilot/"
   },
   {
     "domanda": "What is the role of transparency in Microsoft's Responsible AI principles?",
@@ -47,7 +51,8 @@
       "c": "To hide the limitations of AI systems.",
       "d": "To prioritize efficiency over ethical considerations."
     },
-    "rispostaCorretta": "b"
+    "rispostaCorretta": "b",
+    "origin": "https://learn.microsoft.com/en-us/training/paths/copilot/"
   },
   {
     "domanda": "Why is it important for developers to closely scrutinize AI-generated code?",
@@ -57,7 +62,8 @@
       "c": "To enhance the creative aspect of coding.",
       "d": "To automatically improve system performance."
     },
-    "rispostaCorretta": "b"
+    "rispostaCorretta": "b",
+    "origin": "https://learn.microsoft.com/en-us/training/paths/copilot/"
   },
   {
     "domanda": "What is GitHub Copilot?",
@@ -67,7 +73,8 @@
       "c": "GitHub Copilot is a JavaScript public repository and is one of the best-supported languages.",
       "d": "GitHub Copilot can write a comment that describes logic, and you can add your suggested code to implement the solution."
     },
-    "rispostaCorretta": "a"
+    "rispostaCorretta": "a",
+    "origin": "https://learn.microsoft.com/en-us/training/paths/copilot/"
   },
   {
     "domanda": "What are the supported IDE extensions for GitHub Copilot?",
@@ -77,7 +84,8 @@
       "c": "VS Code, Visual Studio, Neovim, and JetBrains",
       "d": "GitHub.com and JetBrains only"
     },
-    "rispostaCorretta": "c"
+    "rispostaCorretta": "c",
+    "origin": "https://learn.microsoft.com/en-us/training/paths/copilot/"
   },
   {
     "domanda": "What is the difference between GitHub Copilot Business and GitHub Copilot Enterprise?",
@@ -87,7 +95,8 @@
       "c": "GitHub Copilot Enterprise has an extra layer of personalization. Organizations use their own codebase to train GitHub Copilot.",
       "d": "GitHub Copilot Enterprise has an extra layer of security, with IP indemnity and enterprise-grade security, safety, and privacy."
     },
-    "rispostaCorretta": "d"
+    "rispostaCorretta": "d",
+    "origin": "https://learn.microsoft.com/en-us/training/paths/copilot/"
   },
   {
     "domanda": "What's GitHub Copilot?",
@@ -97,7 +106,8 @@
       "c": "An assistant for coding, powered by OpenAI.",
       "d": "A service for web hosting."
     },
-    "rispostaCorretta": "c"
+    "rispostaCorretta": "c",
+    "origin": "https://learn.microsoft.com/en-us/training/paths/copilot/"
   },
   {
     "domanda": "What role does prompting play in utilizing GitHub Copilot effectively?",
@@ -107,7 +117,8 @@
       "c": "It automates the coding process entirely.",
       "d": "It implements real-time collaboration."
     },
-    "rispostaCorretta": "b"
+    "rispostaCorretta": "b",
+    "origin": "https://learn.microsoft.com/en-us/training/paths/copilot/"
   },
   {
     "domanda": "Which of the following rules is a principle of the 4S Method of prompt engineering?",
@@ -117,7 +128,8 @@
       "c": "Streamline processes for efficient code suggestions.",
       "d": "Simplify coding languages for universal understanding."
     },
-    "rispostaCorretta": "b"
+    "rispostaCorretta": "b",
+    "origin": "https://learn.microsoft.com/en-us/training/paths/copilot/"
   },
   {
     "domanda": "How does GitHub Copilot handle personal data?",
@@ -127,7 +139,8 @@
       "c": "It encrypts personal data.",
       "d": "It actively filters out personal data to protect user privacy."
     },
-    "rispostaCorretta": "d"
+    "rispostaCorretta": "d",
+    "origin": "https://learn.microsoft.com/en-us/training/paths/copilot/"
   },
   {
     "domanda": "What is LoRA in the context of fine-tuning Large Language Models (LLMs)?",
@@ -137,7 +150,8 @@
       "c": "A specialized software library enhancing Copilot's performance.",
       "d": "A new programming paradigm supported exclusively by Copilot."
     },
-    "rispostaCorretta": "a"
+    "rispostaCorretta": "a",
+    "origin": "https://learn.microsoft.com/en-us/training/paths/copilot/"
   },
   {
     "domanda": "How does Copilot use the context to provide code suggestions?",
@@ -147,7 +161,8 @@
       "c": "It considers the surrounding code, file type, and content of parallel open tabs in the code editor.",
       "d": "It randomly selects context from the internet."
     },
-    "rispostaCorretta": "c"
+    "rispostaCorretta": "c",
+    "origin": "https://learn.microsoft.com/en-us/training/paths/copilot/"
   },
   {
     "domanda": "Which of these strategies helps to improve prompt effectiveness in GitHub Copilot?",
@@ -157,7 +172,8 @@
       "c": "Keeping the prompt lengthy and detailed.",
       "d": "Avoiding examples in the prompt to not restrict Copilot's creativity."
     },
-    "rispostaCorretta": "a"
+    "rispostaCorretta": "a",
+    "origin": "https://learn.microsoft.com/en-us/training/paths/copilot/"
   },
   {
     "domanda": "What is ghost text in GitHub Copilot?",
@@ -167,7 +183,8 @@
       "c": "Ghost text in GitHub Copilot involves using prompts and natural language questions within your code or documentation.",
       "d": "Ghost text is Copilot's log of all previous completions."
     },
-    "rispostaCorretta": "a"
+    "rispostaCorretta": "a",
+    "origin": "https://learn.microsoft.com/en-us/training/paths/copilot/"
   },
   {
     "domanda": "How do you access GitHub Copilot's inline chat?",
@@ -177,7 +194,8 @@
       "c": "Access the inline chat by using Alt+i on Windows or Option+i on a Mac.",
       "d": "Click the GitHub Copilot logo in the menu bar."
     },
-    "rispostaCorretta": "b"
+    "rispostaCorretta": "b",
+    "origin": "https://learn.microsoft.com/en-us/training/paths/copilot/"
   },
   {
     "domanda": "What are slash commands used for in GitHub Copilot?",
@@ -187,7 +205,8 @@
       "c": "Slash commands are shortcuts to quickly solve common development tasks within the chat or inline pane.",
       "d": "Slash commands are used to connect GitHub Copilot with third-party tools."
     },
-    "rispostaCorretta": "c"
+    "rispostaCorretta": "c",
+    "origin": "https://learn.microsoft.com/en-us/training/paths/copilot/"
   },
   {
     "domanda": "What are the benefits of using agents like '@terminal' or '@workspace' when interacting with GitHub Copilot?",
@@ -197,7 +216,8 @@
       "c": "Agents provide extra security features for detecting vulnerabilities and intrusions within Visual Studio Code projects.",
       "d": "Agents execute GitHub Actions workflows from chat."
     },
-    "rispostaCorretta": "a"
+    "rispostaCorretta": "a",
+    "origin": "https://learn.microsoft.com/en-us/training/paths/copilot/"
   },
   {
     "domanda": "What are the benefits of using implicit prompts with slash commands in inline chat for fixing code issues with GitHub Copilot?",
@@ -207,7 +227,8 @@
       "c": "Implicit prompts help detect security vulnerabilities and potential malicious activities within Visual Studio Code projects for increased safety.",
       "d": "Implicit prompts generate full documentation based on file headers."
     },
-    "rispostaCorretta": "b"
+    "rispostaCorretta": "b",
+    "origin": "https://learn.microsoft.com/en-us/training/paths/copilot/"
   },
   {
     "domanda": "Which of the following choices isn't mentioned as one of the programming languages receiving strong support from GitHub Copilot?",
@@ -217,7 +238,8 @@
       "c": "Rust",
       "d": "Ruby"
     },
-    "rispostaCorretta": "c"
+    "rispostaCorretta": "c",
+    "origin": "https://learn.microsoft.com/en-us/training/paths/copilot/"
   },
   {
     "domanda": "Which slash command in GitHub Copilot Chat is used to generate unit tests for selected code?",
@@ -227,7 +249,8 @@
       "c": "/tests",
       "d": "/unittest"
     },
-    "rispostaCorretta": "b"
+    "rispostaCorretta": "b",
+    "origin": "https://learn.microsoft.com/en-us/training/paths/copilot/"
   },
   {
     "domanda": "What is the purpose of the @workspace agent in GitHub Copilot Chat?",
@@ -237,7 +260,8 @@
       "c": "To run terminal commands",
       "d": "To change Visual Studio Code settings"
     },
-    "rispostaCorretta": "b"
+    "rispostaCorretta": "b",
+    "origin": "https://learn.microsoft.com/en-us/training/paths/copilot/"
   },
   {
     "domanda": "What command would you use to get an explanation of a specific command using GitHub Copilot CLI?",
@@ -247,7 +271,8 @@
       "c": "gh copilot clarify",
       "d": "gh copilot describe"
     },
-    "rispostaCorretta": "b"
+    "rispostaCorretta": "b",
+    "origin": "https://learn.microsoft.com/en-us/training/paths/copilot/"
   },
   {
     "domanda": "Which GitHub Copilot plan includes enterprise-grade security and privacy?",
@@ -257,7 +282,8 @@
       "c": "Enterprise",
       "d": "Both B and C"
     },
-    "rispostaCorretta": "d"
+    "rispostaCorretta": "d",
+    "origin": "https://learn.microsoft.com/en-us/training/paths/copilot/"
   },
   {
     "domanda": "What should you do if GitHub Copilot isn't providing code suggestions?",
@@ -267,7 +293,8 @@
       "c": "Disable the Copilot extension",
       "d": "Change the programming language"
     },
-    "rispostaCorretta": "b"
+    "rispostaCorretta": "b",
+    "origin": "https://learn.microsoft.com/en-us/training/paths/copilot/"
   },
   {
     "domanda": "What is the purpose of the content exclusion feature in GitHub Copilot?",
@@ -277,6 +304,7 @@
       "c": "To increase the speed of code suggestions",
       "d": "To provide legal protection against IP claims"
     },
-    "rispostaCorretta": "b"
+    "rispostaCorretta": "b",
+    "origin": "https://learn.microsoft.com/en-us/training/paths/copilot/"
   }
 ]
