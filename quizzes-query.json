@@ -1,0 +1,282 @@
+[
+  {
+    "domanda": "What is the primary goal of Responsible AI?",
+    "risposte": {
+      "a": "To maximize profits from AI systems.",
+      "b": "To develop AI systems as quickly as possible.",
+      "c": "To ensure AI systems are safe, trustworthy, and ethical.",
+      "d": "To replace human decision-making with AI."
+    },
+    "rispostaCorretta": "c"
+  },
+  {
+    "domanda": "Which principle is NOT one of the six identified by Microsoft for Responsible AI?",
+    "risposte": {
+      "a": "Fairness.",
+      "b": "Innovation.",
+      "c": "Inclusiveness.",
+      "d": "Accountability."
+    },
+    "rispostaCorretta": "b"
+  },
+  {
+    "domanda": "What does the principle of Fairness in Responsible AI emphasize?",
+    "risposte": {
+      "a": "Maximizing AI performance at all costs.",
+      "b": "Ensuring AI systems perform equally well across all demographic groups.",
+      "c": "Prioritizing profitability over ethical concerns.",
+      "d": "Creating AI systems that are easy to understand."
+    },
+    "rispostaCorretta": "b"
+  },
+  {
+    "domanda": "How does Microsoft address potential biases in AI systems?",
+    "risposte": {
+      "a": "By ignoring the issue and focusing on other areas.",
+      "b": "By providing AI systems with more data.",
+      "c": "By reviewing training data, testing with balanced samples, and using adversarial debiasing.",
+      "d": "By allowing users to modify AI system outputs directly."
+    },
+    "rispostaCorretta": "c"
+  },
+  {
+    "domanda": "What is the role of transparency in Microsoft's Responsible AI principles?",
+    "risposte": {
+      "a": "To keep AI operations secret from the public.",
+      "b": "To make AI systems' operations and decisions understandable and clear.",
+      "c": "To hide the limitations of AI systems.",
+      "d": "To prioritize efficiency over ethical considerations."
+    },
+    "rispostaCorretta": "b"
+  },
+  {
+    "domanda": "Why is it important for developers to closely scrutinize AI-generated code?",
+    "risposte": {
+      "a": "To reduce development time.",
+      "b": "To ensure that the code aligns with project-specific conventions and requirements.",
+      "c": "To enhance the creative aspect of coding.",
+      "d": "To automatically improve system performance."
+    },
+    "rispostaCorretta": "b"
+  },
+  {
+    "domanda": "What is GitHub Copilot?",
+    "risposte": {
+      "a": "GitHub Copilot is an AI pair programmer that you can use to get code suggestions.",
+      "b": "GitHub Copilot is OpenAI Codex, a new AI system that OpenAI created.",
+      "c": "GitHub Copilot is a JavaScript public repository and is one of the best-supported languages.",
+      "d": "GitHub Copilot can write a comment that describes logic, and you can add your suggested code to implement the solution."
+    },
+    "rispostaCorretta": "a"
+  },
+  {
+    "domanda": "What are the supported IDE extensions for GitHub Copilot?",
+    "risposte": {
+      "a": "VS Code and Visual Studio",
+      "b": "GitHub.com, VS Code, Visual Studio, Neovim, and JetBrains",
+      "c": "VS Code, Visual Studio, Neovim, and JetBrains",
+      "d": "GitHub.com and JetBrains only"
+    },
+    "rispostaCorretta": "c"
+  },
+  {
+    "domanda": "What is the difference between GitHub Copilot Business and GitHub Copilot Enterprise?",
+    "risposte": {
+      "a": "GitHub Copilot Enterprise has code completions, whereas GitHub Copilot Business doesn't.",
+      "b": "GitHub Copilot Enterprise has chat in IDE and mobile, whereas GitHub Copilot Business doesn't.",
+      "c": "GitHub Copilot Enterprise has an extra layer of personalization. Organizations use their own codebase to train GitHub Copilot.",
+      "d": "GitHub Copilot Enterprise has an extra layer of security, with IP indemnity and enterprise-grade security, safety, and privacy."
+    },
+    "rispostaCorretta": "d"
+  },
+  {
+    "domanda": "What's GitHub Copilot?",
+    "risposte": {
+      "a": "A platform for code repositories.",
+      "b": "A model powered by machine learning.",
+      "c": "An assistant for coding, powered by OpenAI.",
+      "d": "A service for web hosting."
+    },
+    "rispostaCorretta": "c"
+  },
+  {
+    "domanda": "What role does prompting play in utilizing GitHub Copilot effectively?",
+    "risposte": {
+      "a": "It generates instant bug fixes.",
+      "b": "It enhances the quality of code suggestions.",
+      "c": "It automates the coding process entirely.",
+      "d": "It implements real-time collaboration."
+    },
+    "rispostaCorretta": "b"
+  },
+  {
+    "domanda": "Which of the following rules is a principle of the 4S Method of prompt engineering?",
+    "risposte": {
+      "a": "Summarize code objectives concisely.",
+      "b": "Specify instructions explicitly and in detail.",
+      "c": "Streamline processes for efficient code suggestions.",
+      "d": "Simplify coding languages for universal understanding."
+    },
+    "rispostaCorretta": "b"
+  },
+  {
+    "domanda": "How does GitHub Copilot handle personal data?",
+    "risposte": {
+      "a": "It saves all personal data for future references.",
+      "b": "It shares personal data with other users for collaborative projects.",
+      "c": "It encrypts personal data.",
+      "d": "It actively filters out personal data to protect user privacy."
+    },
+    "rispostaCorretta": "d"
+  },
+  {
+    "domanda": "What is LoRA in the context of fine-tuning Large Language Models (LLMs)?",
+    "risposte": {
+      "a": "A method that adds trainable elements to each layer of the pretrained model without a complete overhaul.",
+      "b": "A technology optimizing communication between different coding languages.",
+      "c": "A specialized software library enhancing Copilot's performance.",
+      "d": "A new programming paradigm supported exclusively by Copilot."
+    },
+    "rispostaCorretta": "a"
+  },
+  {
+    "domanda": "How does Copilot use the context to provide code suggestions?",
+    "risposte": {
+      "a": "It considers only the prompt text you provide.",
+      "b": "It considers the file type but not the content of the file.",
+      "c": "It considers the surrounding code, file type, and content of parallel open tabs in the code editor.",
+      "d": "It randomly selects context from the internet."
+    },
+    "rispostaCorretta": "c"
+  },
+  {
+    "domanda": "Which of these strategies helps to improve prompt effectiveness in GitHub Copilot?",
+    "risposte": {
+      "a": "Providing detailed contextual information with clarity.",
+      "b": "Making the prompt as general as possible.",
+      "c": "Keeping the prompt lengthy and detailed.",
+      "d": "Avoiding examples in the prompt to not restrict Copilot's creativity."
+    },
+    "rispostaCorretta": "a"
+  },
+  {
+    "domanda": "What is ghost text in GitHub Copilot?",
+    "risposte": {
+      "a": "Ghost text in GitHub Copilot are suggestions that appear in your text editor as you type.",
+      "b": "Ghost text in GitHub Copilot are options used when typing to provide suggestions.",
+      "c": "Ghost text in GitHub Copilot involves using prompts and natural language questions within your code or documentation.",
+      "d": "Ghost text is Copilot's log of all previous completions."
+    },
+    "rispostaCorretta": "a"
+  },
+  {
+    "domanda": "How do you access GitHub Copilot's inline chat?",
+    "risposte": {
+      "a": "Access the inline chat by clicking on the chat icon in the left sidebar of Visual Studio Code.",
+      "b": "Use Ctrl+i on Windows or Command+i on a Mac to open the inline chat.",
+      "c": "Access the inline chat by using Alt+i on Windows or Option+i on a Mac.",
+      "d": "Click the GitHub Copilot logo in the menu bar."
+    },
+    "rispostaCorretta": "b"
+  },
+  {
+    "domanda": "What are slash commands used for in GitHub Copilot?",
+    "risposte": {
+      "a": "Slash commands are used to format your codebase according to best practices.",
+      "b": "Slash commands are used to debug code and detect security vulnerabilities within your projects.",
+      "c": "Slash commands are shortcuts to quickly solve common development tasks within the chat or inline pane.",
+      "d": "Slash commands are used to connect GitHub Copilot with third-party tools."
+    },
+    "rispostaCorretta": "c"
+  },
+  {
+    "domanda": "What are the benefits of using agents like '@terminal' or '@workspace' when interacting with GitHub Copilot?",
+    "risposte": {
+      "a": "Agents in Visual Studio Code help you ask questions within a specific context, allowing for more precise and relevant answers from GitHub Copilot.",
+      "b": "Agents help enforce a consistent code format based on best practices within Visual Studio Code for improved readability.",
+      "c": "Agents provide extra security features for detecting vulnerabilities and intrusions within Visual Studio Code projects.",
+      "d": "Agents execute GitHub Actions workflows from chat."
+    },
+    "rispostaCorretta": "a"
+  },
+  {
+    "domanda": "What are the benefits of using implicit prompts with slash commands in inline chat for fixing code issues with GitHub Copilot?",
+    "risposte": {
+      "a": "Implicit prompts help enforce a consistent naming convention and syntax based on best practices within Visual Studio Code projects for improved readability.",
+      "b": "Implicit prompts help get better responses from GitHub Copilot without writing longer prompts, making it easier to interact and fix code issues.",
+      "c": "Implicit prompts help detect security vulnerabilities and potential malicious activities within Visual Studio Code projects for increased safety.",
+      "d": "Implicit prompts generate full documentation based on file headers."
+    },
+    "rispostaCorretta": "b"
+  },
+  {
+    "domanda": "Which of the following choices isn't mentioned as one of the programming languages receiving strong support from GitHub Copilot?",
+    "risposte": {
+      "a": "Python",
+      "b": "JavaScript",
+      "c": "Rust",
+      "d": "Ruby"
+    },
+    "rispostaCorretta": "c"
+  },
+  {
+    "domanda": "Which slash command in GitHub Copilot Chat is used to generate unit tests for selected code?",
+    "risposte": {
+      "a": "/generate",
+      "b": "/test",
+      "c": "/tests",
+      "d": "/unittest"
+    },
+    "rispostaCorretta": "b"
+  },
+  {
+    "domanda": "What is the purpose of the @workspace agent in GitHub Copilot Chat?",
+    "risposte": {
+      "a": "To focus only on the current file",
+      "b": "To extend the context of questions to the whole project",
+      "c": "To run terminal commands",
+      "d": "To change Visual Studio Code settings"
+    },
+    "rispostaCorretta": "b"
+  },
+  {
+    "domanda": "What command would you use to get an explanation of a specific command using GitHub Copilot CLI?",
+    "risposte": {
+      "a": "gh copilot suggest",
+      "b": "gh copilot explain",
+      "c": "gh copilot clarify",
+      "d": "gh copilot describe"
+    },
+    "rispostaCorretta": "b"
+  },
+  {
+    "domanda": "Which GitHub Copilot plan includes enterprise-grade security and privacy?",
+    "risposte": {
+      "a": "Pro",
+      "b": "Business",
+      "c": "Enterprise",
+      "d": "Both B and C"
+    },
+    "rispostaCorretta": "d"
+  },
+  {
+    "domanda": "What should you do if GitHub Copilot isn't providing code suggestions?",
+    "risposte": {
+      "a": "Restart the computer",
+      "b": "Check the internet connection",
+      "c": "Disable the Copilot extension",
+      "d": "Change the programming language"
+    },
+    "rispostaCorretta": "b"
+  },
+  {
+    "domanda": "What is the purpose of the content exclusion feature in GitHub Copilot?",
+    "risposte": {
+      "a": "To enhance code completion accuracy",
+      "b": "To prevent specific files or repositories from being used for code suggestions",
+      "c": "To increase the speed of code suggestions",
+      "d": "To provide legal protection against IP claims"
+    },
+    "rispostaCorretta": "b"
+  }
+]
