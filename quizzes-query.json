@@ -306,5 +306,324 @@
     },
     "rispostaCorretta": "b",
     "origin": "https://learn.microsoft.com/en-us/training/paths/copilot/"
+  },
+    {
+    "domanda": "How does GitHub Copilot assist developers in accelerating the learning of new programming languages or frameworks?",
+    "risposte": {
+      "a": "By automatically translating code between different programming languages.",
+      "b": "By providing context-aware code snippets and inline documentation related to new functions and libraries.",
+      "c": "By offering video tutorials and interactive coding sessions within the IDE.",
+      "d": "By managing project dependencies and version control automatically."
+    },
+    "rispostaCorretta": "b",
+    "origin": "https://learn.microsoft.com/en-us/training/modules/developer-use-cases-for-ai-with-github-copilot/6-knowledge-check"
+  },
+  {
+    "domanda": "In what way does GitHub Copilot minimize context switching for developers?",
+    "risposte": {
+      "a": "It integrates multiple project management tools into the IDE.",
+      "b": "It provides code suggestions and completions directly within the editor, reducing the need to search for solutions online.",
+      "c": "It automates the entire coding process, eliminating the need for manual coding.",
+      "d": "It schedules tasks and manages developer workflows automatically."
+    },
+    "rispostaCorretta": "b",
+    "origin": "https://learn.microsoft.com/en-us/training/modules/developer-use-cases-for-ai-with-github-copilot/6-knowledge-check"
+  },
+  {
+    "domanda": "Which feature of GitHub Copilot enhances the process of writing and maintaining code documentation?",
+    "risposte": {
+      "a": "Automated generation of UML diagrams from code.",
+      "b": "Generating contextually relevant inline comments and function descriptions automatically.",
+      "c": "Translating documentation into multiple languages in real-time.",
+      "d": "Creating comprehensive project management reports based on code commits."
+    },
+    "rispostaCorretta": "b",
+    "origin": "https://learn.microsoft.com/en-us/training/modules/developer-use-cases-for-ai-with-github-copilot/6-knowledge-check"
+  },
+  {
+    "domanda": "What is one way GitHub Copilot automates routine coding tasks for developers?",
+    "risposte": {
+      "a": "By deploying applications to production environments automatically.",
+      "b": "By generating boilerplate code for common functionalities, such as setting up a REST API.",
+      "c": "By managing database migrations and schema changes automatically.",
+      "d": "By conducting performance testing and optimization of code automatically."
+    },
+    "rispostaCorretta": "b",
+    "origin": "https://learn.microsoft.com/en-us/training/modules/developer-use-cases-for-ai-with-github-copilot/6-knowledge-check"
+  },
+  {
+    "domanda": "What is the role of the \"coverlet.collector\" package in a C# unit test project?",
+    "risposte": {
+      "a": "It runs integration tests.",
+      "b": "It collects code coverage data.",
+      "c": "It creates test result reports.",
+      "d": "It mocks dependencies automatically."
+    },
+    "rispostaCorretta": "b",
+    "origin": "https://learn.microsoft.com/en-us/training/modules/develop-unit-tests-using-github-copilot-tools/7-knowledge-check"
+  },
+  {
+    "domanda": "Which extension must be installed in Visual Studio Code to enable C# unit testing?",
+    "risposte": {
+      "a": "Java extension pack.",
+      "b": "Python extension.",
+      "c": "C# Dev Kit extension.",
+      "d": "Node.js testing tools."
+    },
+    "rispostaCorretta": "c",
+    "origin": "https://learn.microsoft.com/en-us/training/modules/develop-unit-tests-using-github-copilot-tools/7-knowledge-check"
+  },
+  {
+    "domanda": "What is a best practice when using GitHub Copilot to generate unit tests for ensuring comprehensive test coverage?",
+    "risposte": {
+      "a": "Rely solely on Copilot's generated tests for complete coverage.",
+      "b": "Use the same test cases across all projects to ensure uniformity.",
+      "c": "Review and supplement generated tests with manual testing and code reviews.",
+      "d": "Disable manual test writing to avoid conflicts."
+    },
+    "rispostaCorretta": "c",
+    "origin": "https://learn.microsoft.com/en-us/training/modules/develop-unit-tests-using-github-copilot-tools/7-knowledge-check"
+  },
+  {
+    "domanda": "Which approach ensures that GitHub Copilot generates relevant test cases for edge conditions in your C# code?",
+    "risposte": {
+      "a": "Provide detailed descriptions of the expected behavior for edge cases in the Chat view.",
+      "b": "Only test for average input values, assuming edge cases are covered.",
+      "c": "Depend entirely on default settings in GitHub Copilot Chat.",
+      "d": "Avoid providing example inputs to prevent bias."
+    },
+    "rispostaCorretta": "a",
+    "origin": "https://learn.microsoft.com/en-us/training/modules/develop-unit-tests-using-github-copilot-tools/7-knowledge-check"
+  },
+  {
+    "domanda": "When a unit test fails due to an unhandled edge case in a C# project, how can GitHub Copilot Chat assist you?",
+    "risposte": {
+      "a": "By recommending additional test cases that might cover the edge case causing the failure.",
+      "b": "By automatically rewriting the test case to handle the edge case.",
+      "c": "By suggesting code completions for the failed test case.",
+      "d": "By disabling the failing test case."
+    },
+    "rispostaCorretta": "a",
+    "origin": "https://learn.microsoft.com/en-us/training/modules/develop-unit-tests-using-github-copilot-tools/7-knowledge-check"
+  },
+  {
+    "domanda": "What should be done if GitHub Copilot's generated tests do not cover all code paths?",
+    "risposte": {
+      "a": "Supplement the generated tests with additional manual tests.",
+      "b": "Discard the generated tests and start from scratch.",
+      "c": "Rely solely on Copilot's generated tests but increase code reviews.",
+      "d": "Use Copilot Chat to regenerate the same tests multiple times."
+    },
+    "rispostaCorretta": "a",
+    "origin": "https://learn.microsoft.com/en-us/training/modules/develop-unit-tests-using-github-copilot-tools/7-knowledge-check"
+  },
+  {
+    "domanda": "What is a key benefit of using GitHub Copilot Chat for generating unit tests in a C# project with various edge cases?",
+    "risposte": {
+      "a": "It provides a fully automated testing pipeline without needing manual intervention.",
+      "b": "It guarantees 100% code coverage for all scenarios.",
+      "c": "It accelerates the creation of test cases for edge conditions, saving development time.",
+      "d": "It removes the need for continuous integration tools."
+    },
+    "rispostaCorretta": "c",
+    "origin": "https://learn.microsoft.com/en-us/training/modules/develop-unit-tests-using-github-copilot-tools/7-knowledge-check"
+  },
+  {
+    "domanda": "Which Visual Studio Code extension is specifically designed to integrate GitHub Copilot for enhanced code generation and testing capabilities?",
+    "risposte": {
+      "a": "C# Dev Kit",
+      "b": "Java Language Support",
+      "c": "GitHub Copilot",
+      "d": "Python IntelliSense"
+    },
+    "rispostaCorretta": "c",
+    "origin": "https://learn.microsoft.com/en-us/training/modules/develop-unit-tests-using-github-copilot-tools/7-knowledge-check"
+  },
+  {
+    "domanda": "Which feature of GitHub Copilot aids in speeding up the unit test creation process?",
+    "risposte": {
+      "a": "Real-time code analysis during test execution.",
+      "b": "Automatic code deployment post-testing.",
+      "c": "Generate Tests smart action.",
+      "d": "Integrated performance metrics dashboard."
+    },
+    "rispostaCorretta": "c",
+    "origin": "https://learn.microsoft.com/en-us/training/modules/develop-unit-tests-using-github-copilot-tools/7-knowledge-check"
+  },
+  {
+    "domanda": "What is the primary function of the 'Generate Tests' smart action in GitHub Copilot?",
+    "risposte": {
+      "a": "To create documentation for the codebase.",
+      "b": "To generate unit tests based on existing code.",
+      "c": "To deploy code to production environments.",
+      "d": "To refactor existing code."
+    },
+    "rispostaCorretta": "b",
+    "origin": "copilot"
+  },
+    {
+    "domanda": "How can GitHub Copilot assist in generating unit tests for a C# project?",
+    "risposte": {
+      "a": "By providing code suggestions based on the project's requirements.",
+      "b": "By automatically writing all test cases without any input from the developer.",
+      "c": "By analyzing the codebase and generating tests for all functions.",
+      "d": "By suggesting improvements to existing tests."
+    },
+    "rispostaCorretta": "c",
+    "origin": "copilot"
+  },
+  {
+    "domanda": "What functionality isn't supported in GitHub Copilot Pro?",
+    "risposte": {
+      "a": "VPN Proxy support via self-signed certificates",
+      "b": "Offers multi-line function suggestions",
+      "c": "Editor integration",
+      "d": "Blocks suggestions matching public code"
+    },
+    "rispostaCorretta": "a",
+    "origin": "https://learn.microsoft.com/en-us/training/modules/introduction-to-github-copilot-for-business/5-knowledge-check"
+  },
+  {
+    "domanda": "What percentage of developers said that GitHub Copilot helps them code faster?",
+    "risposte": {
+      "a": "70%",
+      "b": "83%",
+      "c": "65%",
+      "d": "90%"
+    },
+    "rispostaCorretta": "b",
+    "origin": "https://learn.microsoft.com/en-us/training/modules/introduction-to-github-copilot-for-business/5-knowledge-check"
+  },
+  {
+    "domanda": "After you enforced your GitHub Copilot Business policy, where do you first navigate in order to enable Copilot Business for all current and future users?",
+    "risposte": {
+      "a": "Policies",
+      "b": "Your organizations in your profile dropdown menu",
+      "c": "Settings in your profile dropdown menu",
+      "d": "Selected teams/users"
+    },
+    "rispostaCorretta": "b",
+    "origin": "https://learn.microsoft.com/en-us/training/modules/introduction-to-github-copilot-for-business/5-knowledge-check"
+  },
+  {
+    "domanda": "What is the primary purpose of GitHub Copilot?",
+    "risposte": {
+      "a": "To replace human developers.",
+      "b": "To assist developers by providing code suggestions and completions.",
+      "c": "To manage project repositories.",
+      "d": "To automate deployment processes."
+    },
+    "rispostaCorretta": "b",
+    "origin": "copilot"
+  },
+  {
+    "domanda": "What is the main benefit of using GitHub Copilot for developers?",
+    "risposte": {
+      "a": "It writes entire applications without any input.",
+      "b": "It provides context-aware code suggestions to enhance productivity.",
+      "c": "It replaces the need for version control systems.",
+      "d": "It automates project management tasks."
+    },
+    "rispostaCorretta": "b",
+    "origin": "copilot"
+  },
+  {
+    "domanda": "Which of these advanced features aren't available in GitHub Copilot Enterprise but were available in GitHub Copilot Business?",
+    "risposte": {
+      "a": "Copilot Chat Customized to your Codebase",
+      "b": "Copilot Pull Request Summaries",
+      "c": "Copilot Documentation Search",
+      "d": "None of the above"
+    },
+    "rispostaCorretta": "d",
+    "origin": "https://learn.microsoft.com/en-us/training/modules/introduction-to-github-copilot-enterprise/4-knowledge-check"
+  },
+  {
+    "domanda": "How does Copilot use an organization's codebase and internal knowledge to enhance productivity and collaboration?",
+    "risposte": {
+      "a": "By providing code suggestions based on open-source libraries only",
+      "b": "By tailoring coding assistance, answering questions, and suggesting code aligned with the organization's standards and best practices",
+      "c": "By suggesting code without considering the project context",
+      "d": "By randomly generating code snippets"
+    },
+    "rispostaCorretta": "b",
+    "origin": "https://learn.microsoft.com/en-us/training/modules/introduction-to-github-copilot-enterprise/4-knowledge-check"
+  },
+  {
+    "domanda": "Describe the purpose and benefits of Copilot's pull request summaries in GitHub Copilot Enterprise.",
+    "risposte": {
+      "a": "They aim to provide a detailed history of code changes in pull requests",
+      "b": "They assist in automatically generating concise overviews of pull requests based on code changes, enhancing understanding and accelerating review processes",
+      "c": "They track developers' activity within a pull request",
+      "d": "None of the above"
+    },
+    "rispostaCorretta": "b",
+    "origin": "https://learn.microsoft.com/en-us/training/modules/introduction-to-github-copilot-enterprise/4-knowledge-check"
+  },
+  {
+    "domanda": "What is the primary function of Copilot's documentation search feature in GitHub Copilot Enterprise?",
+    "risposte": {
+      "a": "To search for documentation across all public repositories",
+      "b": "To provide quick access to relevant documentation and code examples from internal knowledge bases, enhancing developer productivity",
+      "c": "To generate new documentation automatically",
+      "d": "To replace the need for external documentation"
+    },
+    "rispostaCorretta": "b",
+    "origin": "copilot"
+  },
+  {
+    "domanda": "How does GitHub Copilot work?",
+    "risposte": {
+      "a": "GitHub Copilot uses the prompts that you write in natural language text, to provide suggestions based on what you type.",
+      "b": "GitHub Copilot uses flashing lights to instruct you what to type.",
+      "c": "GitHub Copilot accepts prompts written in radio language, and provides suggestions based on what you type.",
+      "d": "GitHub Copilot randomly suggests code regardless of input."
+    },
+    "rispostaCorretta": "a",
+    "origin": "https://learn.microsoft.com/en-us/training/modules/introduction-copilot-javascript/6-knowledge-check"
+  },
+  {
+    "domanda": "What are some features of GitHub Copilot Free?",
+    "risposte": {
+      "a": "It's a free unrestricted AI tool that works independent of code editors.",
+      "b": "It provides several suggestions and chats per month directly in your IDE and on github.com.",
+      "c": "It provides an option to enable slower responses, preserving your Copilot Pro quota.",
+      "d": "It only works with GitHub Codespaces."
+    },
+    "rispostaCorretta": "b",
+    "origin": "https://learn.microsoft.com/en-us/training/modules/introduction-copilot-javascript/6-knowledge-check"
+  },
+  {
+    "domanda": "How can you accept GitHub Copilot's suggestions?",
+    "risposte": {
+      "a": "Press the Tab key.",
+      "b": "Press F1 key.",
+      "c": "Press F4 key.",
+      "d": "Double-click on the suggestion."
+    },
+    "rispostaCorretta": "a",
+    "origin": "https://learn.microsoft.com/en-us/training/modules/introduction-copilot-javascript/6-knowledge-check"
+  },
+  {
+    "domanda": "Identify which statement is valid and select the correct answer:",
+    "risposte": {
+      "a": "A prompt, which is our output, is a collection of songs that tells GitHub Copilot what to generate.",
+      "b": "A prompt, which is our input, is a collection of instructions or guidelines that tell GitHub Copilot what to generate.",
+      "c": "A prompt, which is a separate document, is a collection of instructions that tells GitHub Copilot what to generate.",
+      "d": "A prompt is a hidden file GitHub Copilot reads at runtime."
+    },
+    "rispostaCorretta": "b",
+    "origin": "https://learn.microsoft.com/en-us/training/modules/introduction-copilot-javascript/6-knowledge-check"
+  },
+  {
+    "domanda": "What does the quality of GitHub Copilot output depend on?",
+    "risposte": {
+      "a": "Your code editor.",
+      "b": "How well your extensions were installed.",
+      "c": "How well you crafted your prompt.",
+      "d": "The size of your GitHub repository."
+    },
+    "rispostaCorretta": "c",
+    "origin": "https://learn.microsoft.com/en-us/training/modules/introduction-copilot-javascript/6-knowledge-check"
   }
 ]
