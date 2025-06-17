@@ -625,5 +625,60 @@
     },
     "rispostaCorretta": "c",
     "origin": "https://learn.microsoft.com/en-us/training/modules/introduction-copilot-javascript/6-knowledge-check"
+  },
+    {
+    "domanda": "Which practice improves GitHub Copilot’s ability to generate high-quality test cases?",
+    "risposte": {
+      "a": "Providing example inputs and expected outputs in comments.",
+      "b": "Avoiding comments to let Copilot be more creative.",
+      "c": "Using only generic function names.",
+      "d": "Disabling syntax highlighting in the editor."
+    },
+    "rispostaCorretta": "a",
+    "origin": "GPT"
+  },
+  {
+    "domanda": "How can you make Copilot provide code suggestions aligned with team conventions?",
+    "risposte": {
+      "a": "Write prompts using team-specific naming and documentation patterns.",
+      "b": "Use random variable names in examples.",
+      "c": "Avoid including comments or annotations.",
+      "d": "Train Copilot manually using team repositories."
+    },
+    "rispostaCorretta": "a",
+    "origin": "GPT"
+  },
+  {
+    "domanda": "What is a limitation developers must keep in mind when using GitHub Copilot?",
+    "risposte": {
+      "a": "Copilot cannot generate code in any statically typed language.",
+      "b": "Copilot might suggest outdated or insecure patterns.",
+      "c": "Copilot requires root permissions to run.",
+      "d": "Copilot can only be used in GitHub-hosted repositories."
+    },
+    "rispostaCorretta": "b",
+    "origin": "GPT"
+  },
+  {
+    "domanda": "Which of the following prompts would most likely result in a Copilot suggestion for a Python function that calculates factorial?",
+    "risposte": {
+      "a": "Create a data structure using SQL.",
+      "b": "Write a function that returns the product of all integers from 1 to n.",
+      "c": "Generate a recursive HTML template.",
+      "d": "Convert text to uppercase using JavaScript."
+    },
+    "rispostaCorretta": "b",
+    "origin": "GPT"
+  },
+  {
+    "domanda": "What is one of the ethical considerations when using AI tools like GitHub Copilot?",
+    "risposte": {
+      "a": "Ensuring the suggestions follow your personal coding style.",
+      "b": "Relying on Copilot to write all documentation.",
+      "c": "Being aware that generated code may unintentionally replicate licensed content.",
+      "d": "Using Copilot only during non-working hours."
+    },
+    "rispostaCorretta": "c",
+    "origin": "GPT"
   }
 ]
