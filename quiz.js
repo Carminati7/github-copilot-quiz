@@ -9,8 +9,10 @@ function generateQuiz(questions) {
   resultsDiv.innerHTML = "";
   submitBtn.disabled = false;
 
+  // Applica il filtro
+  const filteredQuestions = filterQuestions(questions);
   // Estrai 20 domande casuali
-  const selectedQuestions = questions
+  const selectedQuestions = filteredQuestions
     .sort(() => 0.5 - Math.random())
     .slice(0, 20);
 
@@ -63,6 +65,29 @@ function generateQuiz(questions) {
   };
 }
 
+// Crea la select per filtrare le domande per origin
+const filterDiv = document.createElement("div");
+filterDiv.style.margin = "16px 0";
+const filterLabel = document.createElement("label");
+filterLabel.textContent = "Includi domande con origin: ";
+filterLabel.setAttribute("for", "originSelect");
+const originSelect = document.createElement("select");
+originSelect.id = "originSelect";
+originSelect.innerHTML = `
+  <option value="all">Tutte</option>
+  <option value="no-copilot-gpt">Escludi copilot & GPT</option>
+`;
+filterDiv.appendChild(filterLabel);
+filterDiv.appendChild(originSelect);
+form.parentElement.insertBefore(filterDiv, form);
+
+function filterQuestions(questions) {
+  const val = originSelect.value;
+  if (val === "all") return questions;
+  if (val === "no-copilot-gpt") return questions.filter(q => q.origin !== "copilot" && q.origin !== "GPT");
+  return questions;
+}
+
 // Carica il file JSON e genera il quiz
 fetch("quizzes-query.json")
   .then((response) => {
@@ -70,8 +95,24 @@ fetch("quizzes-query.json")
     return response.json();
   })
   .then((data) => {
+    window.quizData = data; // Salva i dati globalmente per rigenerare il quiz
     generateQuiz(data);
   })
   .catch((error) => {
     resultsDiv.innerHTML = `<p style="color:red;">${error.message}</p>`;
   });
+
+// Bottone per rigenerare il quiz senza refresh
+const regenBtn = document.createElement("button");
+regenBtn.id = "regenBtn";
+regenBtn.textContent = "Rigenera Quiz";
+regenBtn.type = "button";
+regenBtn.style.margin = "16px 0";
+regenBtn.onclick = () => {
+  if (window.quizData) generateQuiz(window.quizData);
+};
+form.parentElement.insertBefore(regenBtn, form);
+
+originSelect.onchange = () => {
+  if (window.quizData) generateQuiz(window.quizData);
+};
