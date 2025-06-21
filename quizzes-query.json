@@ -801,5 +801,225 @@
     },
     "rispostaCorretta": "a",
     "origin": "copilot"
+  },
+   {
+    "domanda": "Which factor can reduce the effectiveness of prompt engineering in GitHub Copilot?",
+    "risposte": {
+      "a": "Including precise examples and context",
+      "b": "Providing vague and generic prompts",
+      "c": "Using domain-specific language",
+      "d": "Adding clear comments"
+    },
+    "rispostaCorretta": "b",
+    "origin": "GPT"
+  },
+  {
+    "domanda": "What does GitHub Copilot's duplication detection feature aim to do?",
+    "risposte": {
+      "a": "Detect bugs in code",
+      "b": "Avoid generating suggestions identical to public code",
+      "c": "Remove comments automatically",
+      "d": "Validate license compliance"
+    },
+    "rispostaCorretta": "b",
+    "origin": "GPT"
+  },
+  {
+    "domanda": "In GitHub Copilot, what is a Knowledge Base primarily used for?",
+    "risposte": {
+      "a": "Training new models on open source data",
+      "b": "Storing user preferences and licenses",
+      "c": "Providing context-specific documentation and best practices",
+      "d": "Generating billing reports"
+    },
+    "rispostaCorretta": "c",
+    "origin": "GPT"
+  },
+  {
+    "domanda": "What does the Copilot proxy service do before sending data to the model?",
+    "risposte": {
+      "a": "Encrypts all user data",
+      "b": "Executes the code for debugging",
+      "c": "Filters and sanitizes the prompt for safety and privacy",
+      "d": "Compresses the prompt for faster transmission"
+    },
+    "rispostaCorretta": "c",
+    "origin": "GPT"
+  },
+  {
+    "domanda": "What limitation is directly related to the context window of GitHub Copilot?",
+    "risposte": {
+      "a": "Copilot can only be used with JavaScript",
+      "b": "Copilot forgets earlier code if the prompt is too long",
+      "c": "Copilot doesn’t support multiple users",
+      "d": "Copilot requires an external API"
+    },
+    "rispostaCorretta": "b",
+    "origin": "GPT"
+  },
+  {
+    "domanda": "Which of the following is true about GitHub Copilot CLI?",
+    "risposte": {
+      "a": "It only supports Python commands",
+      "b": "It enables command explanations and suggestions in the terminal",
+      "c": "It is used to manage repository settings",
+      "d": "It is available only for Windows"
+    },
+    "rispostaCorretta": "b",
+    "origin": "GPT"
+  },
+  {
+    "domanda": "What does prompt chaining refer to in prompt engineering?",
+    "risposte": {
+      "a": "Using the same prompt repeatedly",
+      "b": "Combining multiple related prompts to guide the model toward a complex objective",
+      "c": "Removing all examples from the prompt",
+      "d": "Embedding prompts inside function calls"
+    },
+    "rispostaCorretta": "b",
+    "origin": "GPT"
+  },
+  {
+    "domanda": "What kind of content is best suited for inclusion in a GitHub Copilot Knowledge Base?",
+    "risposte": {
+      "a": "Company news articles",
+      "b": "Project requirements and marketing plans",
+      "c": "Code snippets, style guides, and best practices",
+      "d": "External blog posts"
+    },
+    "rispostaCorretta": "c",
+    "origin": "GPT"
+  },
+  {
+    "domanda": "Which GitHub Copilot feature allows you to tailor responses using your own codebase?",
+    "risposte": {
+      "a": "Copilot Chat",
+      "b": "Copilot for CLI",
+      "c": "Custom models and Knowledge Bases in Copilot Enterprise",
+      "d": "Inline comments"
+    },
+    "rispostaCorretta": "c",
+    "origin": "GPT"
+  },
+  {
+    "domanda": "Why is transparency important in Responsible AI?",
+    "risposte": {
+      "a": "To allow users to easily bypass AI filters",
+      "b": "To make it easier to sell AI services",
+      "c": "To help users understand and trust the system's decisions",
+      "d": "To reduce system memory usage"
+    },
+    "rispostaCorretta": "c",
+    "origin": "GPT"
+  },
+  {
+    "domanda": "Which scenario best demonstrates few-shot prompting?",
+    "risposte": {
+      "a": "Providing one detailed example in a comment",
+      "b": "Providing three examples with expected output",
+      "c": "Using no examples and asking for help",
+      "d": "Providing contradictory examples"
+    },
+    "rispostaCorretta": "b",
+    "origin": "GPT"
+  },
+  {
+    "domanda": "How does Copilot for Business enhance security?",
+    "risposte": {
+      "a": "By blocking access to the internet",
+      "b": "By enforcing HTTPS-only repositories",
+      "c": "By allowing content exclusions and disabling data retention",
+      "d": "By encrypting JavaScript files"
+    },
+    "rispostaCorretta": "c",
+    "origin": "GPT"
+  },
+  {
+    "domanda": "What should developers do to comply with Responsible AI practices when using Copilot?",
+    "risposte": {
+      "a": "Disable all code reviews",
+      "b": "Test and validate all generated code for fairness and correctness",
+      "c": "Allow Copilot to deploy code automatically",
+      "d": "Use Copilot only for open-source projects"
+    },
+    "rispostaCorretta": "b",
+    "origin": "GPT"
+  },
+  {
+    "domanda": "How can you monitor GitHub Copilot usage across an organization?",
+    "risposte": {
+      "a": "Using audit logs and REST API endpoints",
+      "b": "Asking each user individually",
+      "c": "Installing third-party analytics tools",
+      "d": "Only available through GitHub Support"
+    },
+    "rispostaCorretta": "a",
+    "origin": "GPT"
+  },
+  {
+    "domanda": "Which principle is part of Microsoft's Responsible AI framework?",
+    "risposte": {
+      "a": "Openness",
+      "b": "Efficiency",
+      "c": "Accountability",
+      "d": "Automation"
+    },
+    "rispostaCorretta": "c",
+    "origin": "GPT"
+  },
+  {
+    "domanda": "Why might Copilot suggest outdated code?",
+    "risposte": {
+      "a": "Because it generates code randomly",
+      "b": "Because it sometimes uses training data that is not the most recent",
+      "c": "Because the IDE modifies the suggestion",
+      "d": "Because Copilot is limited to the current file only"
+    },
+    "rispostaCorretta": "b",
+    "origin": "GPT"
+  },
+  {
+    "domanda": "Which domain does GitHub Copilot Chat perform best in?",
+    "risposte": {
+      "a": "Interactive project planning",
+      "b": "Code explanation, refactoring, and debugging",
+      "c": "Source control management",
+      "d": "Serverless deployment"
+    },
+    "rispostaCorretta": "b",
+    "origin": "GPT"
+  },
+  {
+    "domanda": "What is the role of the Copilot Editor config file?",
+    "risposte": {
+      "a": "To enable autocomplete in GitHub repositories",
+      "b": "To configure Copilot features for the project or editor",
+      "c": "To disable IDE themes",
+      "d": "To reset AI learning preferences"
+    },
+    "rispostaCorretta": "b",
+    "origin": "GPT"
+  },
+  {
+    "domanda": "Which GitHub Copilot plan is most suitable for a large enterprise requiring policy control and private knowledge bases?",
+    "risposte": {
+      "a": "Copilot Free",
+      "b": "Copilot Individual",
+      "c": "Copilot Business",
+      "d": "Copilot Enterprise"
+    },
+    "rispostaCorretta": "d",
+    "origin": "GPT"
+  },
+  {
+    "domanda": "What is prompt injection?",
+    "risposte": {
+      "a": "A way to automatically fill forms",
+      "b": "Malicious input intended to manipulate the AI's behavior",
+      "c": "A method to increase prompt accuracy",
+      "d": "A way to bypass prompt limits"
+    },
+    "rispostaCorretta": "b",
+    "origin": "GPT"
   }
 ]
