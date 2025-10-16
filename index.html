@@ -4,15 +4,57 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>GitHub Copilot Quiz</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="src/styles/style.css" />
 </head>
 <body>
   <div class="container">
     <h1>GitHub Copilot Quiz</h1>
-    <form id="quizForm"></form>
-    <button id="submitBtn">Conferma</button>
-    <div id="results"></div>
+    
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="predefined">Quiz Predefiniti</button>
+      <button class="tab-btn" data-tab="custom">Quiz Personalizzato</button>
+      <button class="tab-btn" data-tab="create">Crea Quiz <span class="wip-tag">WIP</span></button>
+    </div>
+
+    <div id="predefinedQuiz" class="tab-content active">
+      <div style="margin: 16px 0;">
+        <label for="topicSelect">Filtra domande per topic: </label>
+        <select id="topicSelect"></select>
+      </div>
+      <div style="margin: 16px 0;">
+        <label for="originSelect">Includi domande con origin: </label>
+        <select id="originSelect">
+          <option value="all">Tutte</option>
+          <option value="no-copilot-gpt">Escludi copilot & GPT</option>
+        </select>
+      </div>
+      <button type="button" class="genBtn" data-type="predefined">Genera Quiz</button>
+    </div>
+
+    <div id="customQuiz" class="tab-content">
+      <div style="margin: 16px 0;">
+        <label for="customQuizText">Inserisci il JSON/YAML del quiz:</label>
+        <textarea id="customQuizText" rows="10" style="width: 100%; margin-top: 8px;"></textarea>
+        <div style="margin-top: 8px;">
+          <input type="checkbox" id="clearAfterGenerate" checked>
+          <label for="clearAfterGenerate">Svuota il campo dopo la generazione del quiz</label>
+        </div>
+      </div>
+      <button type="button" class="genBtn" data-type="custom">Genera Quiz</button>
+    </div>
+
+    <div id="createQuiz" class="tab-content">
+      <p>Questa sezione verrà implementata successivamente per permettere la creazione di quiz attraverso un form.</p>
+    </div>
+
+    <div id="quizContainer" style="display: none;">
+      <form id="quizForm">
+      </form>
+      <button id="submitBtn">Conferma</button>
+      <div id="results"></div>
+    </div>
   </div>
-  <script src="quiz.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/yamljs@latest/dist/yaml.min.js"></script>
+  <script type="module" src="src/js/main.js"></script>
 </body>
 </html>
