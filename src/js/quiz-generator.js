@@ -1,16 +1,33 @@
 // Funzione per generare il quiz a partire dalle domande
-export function generateQuiz(questions, form, resultsDiv, submitBtn) {
+export function generateQuiz(questions, form, resultsDiv, submitBtn, shouldRandomize = true) {
   // Svuota eventuale contenuto precedente
   form.innerHTML = "";
   resultsDiv.innerHTML = "";
   submitBtn.disabled = false;
 
-  // Applica il filtro
-  const filteredQuestions = filterQuestions(questions);
-  // Estrai 20 domande casuali
-  const selectedQuestions = filteredQuestions
-    .sort(() => 0.5 - Math.random())
-    .slice(0, 20);
+  // Assicurati che stiamo lavorando con l'array di domande corretto
+  const questionArray = Array.isArray(questions) ? questions : 
+                       (questions.questions ? questions.questions : []);
+
+  // Determina se siamo nella tab del quiz custom
+  const isCustomQuiz = document.querySelector('#customQuiz').classList.contains('active');
+  
+  // Seleziona il numero di domande dal dropdown appropriato
+  const select = document.getElementById(isCustomQuiz ? 'customQuestionCount' : 'predefinedQuestionCount');
+  console.log(select.value);
+  const numQuestions = select ? parseInt(select.value) : 20;
+
+  let selectedQuestions;
+  if (shouldRandomize) {
+    // Applica il filtro e randomizza
+    const filteredQuestions = filterQuestions(questionArray);
+    selectedQuestions = filteredQuestions
+      .sort(() => 0.5 - Math.random())
+      .slice(0, numQuestions);
+  } else {
+    // Usa le domande nell'ordine fornito
+    selectedQuestions = questionArray;
+  }
 
   selectedQuestions.forEach((q, index) => {
     const qDiv = document.createElement("div");
@@ -30,6 +47,13 @@ export function generateQuiz(questions, form, resultsDiv, submitBtn) {
     `;
     form.appendChild(qDiv);
   });
+
+  // Ritorna le domande selezionate per permettere la condivisione
+  if (!shouldRandomize) {
+    // Se non è randomizzato, ritorna l'array originale
+    return questionArray;
+  }
+  return selectedQuestions;
 
   submitBtn.onclick = () => {
     let score = 0;
@@ -60,6 +84,13 @@ export function generateQuiz(questions, form, resultsDiv, submitBtn) {
     resultsDiv.innerHTML = `<h2>Hai totalizzato ${score} su ${selectedQuestions.length} punti.</h2>`;
     submitBtn.disabled = true;
   };
+
+  // Ritorna le domande selezionate per permettere la condivisione
+  if (!shouldRandomize) {
+    // Se non è randomizzato, ritorna l'array originale
+    return questionArray;
+  }
+  return selectedQuestions;
 }
 
 //Filtra le domande in base all'origine selezionata
