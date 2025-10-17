@@ -1,0 +1,26 @@
+- domanda: "Sample question 1"
+  codeBlock: |
+    public class Main {
+        public static void main(String[] args) {
+            int x = 5;
+            int y = 10;
+            x += y;
+            System.out.println(x);
+        }
+    }
+  risposte:
+    a: "Sample answer 1"
+    b: "Sample answer 2"
+    c: "Sample answer 3"
+    d: "Sample answer 4"
+  rispostaCorretta: "c"
+  origin: "sampleOrigin"
+
+- domanda: "Sample question 2"
+  risposte:
+    a: "Sample answer A"
+    b: "Sample answer B"
+    c: "Sample answer C"
+    d: "Sample answer D"
+  rispostaCorretta: "a"
+  origin: "sampleOrigin"
