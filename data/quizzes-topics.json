@@ -5,7 +5,7 @@
         "resource": "data/GCP-quizzes-query.json"
     },
     {
-        "title": "[MOCK] MongoDB Java Developer Associate",
+        "title": "MongoDB Java Developer Associate",
         "description": "Quizzes about MongoDB and Java development.",
         "resource": "data/MongoDB-JD-Associate-quizzes-query.yaml"
     }
