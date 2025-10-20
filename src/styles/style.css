@@ -26,6 +26,14 @@ h1 {
   border-radius: 5px;
 }
 
+.multiple-answer-notice {
+  margin: 8px 0;
+  padding: 8px;
+  background-color: #fff3e0;
+  border-radius: 4px;
+  border-left: 4px solid #ffbf00;
+}
+
 .options label {
   display: block;
   margin: 8px 0;
@@ -128,6 +136,41 @@ textarea {
   border-radius: 5px;
   overflow-x: auto;
   font-family: monospace;
+}
+
+.link-wrapper {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.link-wrapper input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #f8f8f8;
+}
+
+.copyBtn {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.copyBtn:hover {
+  background-color: #45a049;
+}
+
+.link-help {
+  margin-top: 8px;
+  color: #666;
+  font-size: 14px;
 }
 
 .wip-tag {

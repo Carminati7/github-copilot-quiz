@@ -28,6 +28,17 @@
           <option value="no-copilot-gpt">Escludi copilot & GPT</option>
         </select>
       </div>
+      <div style="margin: 16px 0;">
+        <label for="predefinedQuestionCount">Numero di domande: </label>
+        <select id="predefinedQuestionCount">
+          <option value="5">5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+          <option value="20" selected>20</option>
+          <option value="25">25</option>
+          <option value="30">30</option>
+        </select>
+      </div>
       <button type="button" class="genBtn" data-type="predefined">Genera Quiz</button>
     </div>
 
@@ -35,10 +46,31 @@
       <div style="margin: 16px 0;">
         <label for="customQuizText">Inserisci il JSON/YAML del quiz:</label>
         <textarea id="customQuizText" rows="10" style="width: 100%; margin-top: 8px;"></textarea>
-        <div style="margin-top: 8px;">
-          <input type="checkbox" id="clearAfterGenerate" checked>
-          <label for="clearAfterGenerate">Svuota il campo dopo la generazione del quiz</label>
+        <div class="quiz-options" style="margin-top: 8px;">
+          <div>
+            <input type="checkbox" id="clearAfterGenerate" checked>
+            <label for="clearAfterGenerate">Svuota il campo dopo la generazione del quiz</label>
+          </div>
+          <div style="margin-top: 8px;">
+            <label for="customQuestionCount">Numero di domande: </label>
+            <select id="customQuestionCount">
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+              <option value="20" selected>20</option>
+              <option value="25">25</option>
+              <option value="30">30</option>
+            </select>
+          </div>
         </div>
+      </div>
+      <div id="quizLinkContainer" style="margin: 16px 0; display: none;">
+        <label>Link al quiz:</label>
+        <div class="link-wrapper">
+          <input type="text" id="quizLink" readonly>
+          <button type="button" class="copyBtn" onclick="navigator.clipboard.writeText(document.getElementById('quizLink').value)">Copia</button>
+        </div>
+        <p class="link-help">Condividi questo link per far eseguire il quiz ad altri</p>
       </div>
       <button type="button" class="genBtn" data-type="custom">Genera Quiz</button>
     </div>
@@ -55,6 +87,7 @@
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/yamljs@latest/dist/yaml.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pako@2.1.0/dist/pako.min.js"></script>
   <script type="module" src="src/js/main.js"></script>
 </body>
 </html>

@@ -1,20 +1,36 @@
 // Gestione delle tabs
 export function initializeTabs() {
   document.querySelectorAll('.tab-btn').forEach(button => {
-    button.addEventListener('click', () => {
-      // Rimuovi la classe active da tutti i pulsanti e contenuti
-      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-      document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
-      
-      // Aggiungi la classe active al pulsante cliccato e al contenuto corrispondente
-      button.classList.add('active');
-      const tabId = button.dataset.tab;
-      document.getElementById(tabId + 'Quiz').classList.add('active');
-
-      // Nascondi il container del quiz quando si cambia tab
-      document.getElementById('quizContainer').style.display = 'none';
-    });
+    button.addEventListener('click', () => switchTab(button.dataset.tab));
   });
+}
+
+// Funzione per cambiare tab
+export function switchTab(tabId) {
+  // Rimuovi la classe active da tutti i pulsanti e contenuti
+  document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+  document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+  
+  // Aggiungi la classe active al pulsante e al contenuto corrispondente
+  document.querySelector(`[data-tab="${tabId}"]`).classList.add('active');
+  document.getElementById(tabId + 'Quiz').classList.add('active');
+
+  // Nascondi il container del quiz quando si cambia tab
+  if (!tabId.startsWith('shared')) {
+    document.getElementById('quizContainer').style.display = 'none';
+  }
+}
+
+// Nasconde tutte le tab e mostra solo il quiz
+export function hideTabsAndShowQuiz() {
+  // Nascondi tutte le tab e i loro contenuti
+  document.querySelector('.tabs').style.display = 'none';
+  document.querySelectorAll('.tab-content').forEach(content => {
+    content.style.display = 'none';
+  });
+  
+  // Mostra il container del quiz
+  document.getElementById('quizContainer').style.display = 'block';
 }
 
 // Inizializzazione dei topic

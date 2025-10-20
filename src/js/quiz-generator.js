@@ -1,29 +1,51 @@
 // Funzione per generare il quiz a partire dalle domande
-export function generateQuiz(questions, form, resultsDiv, submitBtn) {
+export function generateQuiz(questions, form, resultsDiv, submitBtn, shouldRandomize = true) {
   // Svuota eventuale contenuto precedente
   form.innerHTML = "";
   resultsDiv.innerHTML = "";
   submitBtn.disabled = false;
 
-  // Applica il filtro
-  const filteredQuestions = filterQuestions(questions);
-  // Estrai 20 domande casuali
-  const selectedQuestions = filteredQuestions
-    .sort(() => 0.5 - Math.random())
-    .slice(0, 20);
+  // Assicurati che stiamo lavorando con l'array di domande corretto
+  const questionArray = Array.isArray(questions) ? questions : 
+                       (questions.questions ? questions.questions : []);
+
+  // Determina se siamo nella tab del quiz custom
+  const isCustomQuiz = document.querySelector('#customQuiz').classList.contains('active');
+  
+  // Seleziona il numero di domande dal dropdown appropriato
+  const select = document.getElementById(isCustomQuiz ? 'customQuestionCount' : 'predefinedQuestionCount');
+  console.log(select.value);
+  const numQuestions = select ? parseInt(select.value) : 20;
+
+  let selectedQuestions;
+  if (shouldRandomize) {
+    // Applica il filtro e randomizza
+    const filteredQuestions = filterQuestions(questionArray);
+    selectedQuestions = filteredQuestions
+      .sort(() => 0.5 - Math.random())
+      .slice(0, numQuestions);
+  } else {
+    // Usa le domande nell'ordine fornito
+    selectedQuestions = questionArray;
+  }
 
   selectedQuestions.forEach((q, index) => {
     const qDiv = document.createElement("div");
     qDiv.classList.add("question");
 
+    // Determina se la domanda ha risposte multiple
+    const isMultipleAnswer = Array.isArray(q.rispostaCorretta);
+    const numCorrectAnswers = isMultipleAnswer ? q.rispostaCorretta.length : 1;
+
     qDiv.innerHTML = `
       <p><strong>${index + 1}. ${q.domanda}</strong></p>
+      ${isMultipleAnswer ? `<p class="multiple-answer-notice">Seleziona ${numCorrectAnswers} risposte corrette</p>` : ''}
       ${q.codeBlock ? `<div class="code-block"><pre>${q.codeBlock}</pre></div>` : ''}
       <div class="options">
         ${Object.entries(q.risposte)
           .map(
             ([key, val]) =>
-              `<label><input type="radio" name="q${index}" value="${key}"> ${key}) ${val}</label>`
+              `<label><input type="${isMultipleAnswer ? 'checkbox' : 'radio'}" name="q${index}" value="${key}"> ${key}) ${val}</label>`
           )
           .join("")}
       </div>
@@ -33,33 +55,62 @@ export function generateQuiz(questions, form, resultsDiv, submitBtn) {
 
   submitBtn.onclick = () => {
     let score = 0;
-    const answers = document.querySelectorAll("input[type=radio]:checked");
 
-    answers.forEach((input) => {
-      const index = parseInt(input.name.replace("q", ""));
-      const correct = selectedQuestions[index].rispostaCorretta;
-      const selected = input.value;
+    // Controlla ogni domanda
+    selectedQuestions.forEach((question, index) => {
+      const isMultipleAnswer = Array.isArray(question.rispostaCorretta);
+      const inputs = document.querySelectorAll(`input[name=q${index}]`);
+      const selectedAnswers = Array.from(inputs)
+        .filter(input => input.checked)
+        .map(input => input.value);
 
-      if (selected === correct) {
-        input.parentElement.classList.add("correct");
+      let isCorrect = false;
+      if (isMultipleAnswer) {
+        // Per risposte multiple, controlla che siano state selezionate tutte e sole le risposte corrette
+        isCorrect = selectedAnswers.length === question.rispostaCorretta.length &&
+                   selectedAnswers.every(answer => question.rispostaCorretta.includes(answer));
+      } else {
+        // Per risposta singola, controlla che sia stata selezionata la risposta corretta
+        isCorrect = selectedAnswers.length === 1 && selectedAnswers[0] === question.rispostaCorretta;
+      }
+
+      if (isCorrect) {
+        selectedAnswers.forEach(answer => {
+          const input = document.querySelector(`input[name=q${index}][value="${answer}"]`);
+          if (input) input.parentElement.classList.add("correct");
+        });
         score++;
       } else {
-        input.parentElement.classList.add("incorrect");
-        const correctInput = document.querySelector(
-          `input[name=q${index}][value=${correct}]`
-        );
-        if (correctInput) correctInput.parentElement.classList.add("correct");
+        // Marca le risposte selezionate come incorrette
+        selectedAnswers.forEach(answer => {
+          const input = document.querySelector(`input[name=q${index}][value="${answer}"]`);
+          if (input) input.parentElement.classList.add("incorrect");
+        });
+
+        // Evidenzia le risposte corrette
+        const correctAnswers = Array.isArray(question.rispostaCorretta) ? 
+                             question.rispostaCorretta : 
+                             [question.rispostaCorretta];
+        correctAnswers.forEach(answer => {
+          const input = document.querySelector(`input[name=q${index}][value="${answer}"]`);
+          if (input) input.parentElement.classList.add("correct");
+        });
       }
 
       // Disabilita tutte le opzioni per questa domanda
-      document
-        .querySelectorAll(`input[name=q${index}]`)
-        .forEach((el) => (el.disabled = true));
+      inputs.forEach(el => el.disabled = true);
     });
 
     resultsDiv.innerHTML = `<h2>Hai totalizzato ${score} su ${selectedQuestions.length} punti.</h2>`;
     submitBtn.disabled = true;
   };
+
+  // Ritorna le domande selezionate per permettere la condivisione
+  if (!shouldRandomize) {
+    // Se non è randomizzato, ritorna l'array originale
+    return questionArray;
+  }
+  return selectedQuestions;
 }
 
 //Filtra le domande in base all'origine selezionata
